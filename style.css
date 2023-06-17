@@ -177,6 +177,34 @@ i.fab {
     /* padding: 5px; */
 }
 
+.about--me__phone {
+    display: block;
+    color: rgb(196, 8, 8);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about--me__phone::before {
+    content: '\f095';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5rem;
+    color: black
+}
+
+.about--me__email {
+    display: block;
+    margin-bottom: 1rem;
+    color: rgb(214, 9, 9);
+    font-weight: 600;
+}
+
+.about--me__email::before {
+    content: '\f0e0';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5rem;
+    color: black;
+}
+
 
 /* About me */
 
@@ -207,7 +235,11 @@ i.fab {
         grid-area: d;
     }
     .section--home__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         grid-area: e;
+        margin-left: 40px;
     }
     .section--home__links ul {
         display: flex;
@@ -217,6 +249,7 @@ i.fab {
     .home--text__p {
         margin-bottom: 1rem;
     }
+    .section--home__links a {}
 }
 
 @media screen and (max-width:670px) {
