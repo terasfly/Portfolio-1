@@ -40,23 +40,23 @@ body {
 }
 
 header {
-    /* position: fixed;
-    width: 100%;
+    position: sticky;
     top: 0;
-    right: 0; */
+    z-index: 9999;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-around;
-    width: 100%;
     align-items: center;
     padding: 20px 25px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* Add a background color to ensure visibility */
 }
 
 .logo {
     font-size: 1.61rem;
     font-weight: 600;
     color: var(--text-color);
-/*      */
+    /*      */
 }
 
 .logo__text {
@@ -449,6 +449,11 @@ i.fa-facebook {
 }
 
 @media screen and (max-width: 800px) {
+    header {
+        position: sticky;
+        /* top: 0; */
+        /* z-index: 9999; */
+    }
     .section--home {
         display: grid;
         font-size: var(--small-font);
@@ -484,6 +489,9 @@ i.fa-facebook {
 }
 
 @media screen and (max-width:670px) {
+    header {
+        position: sticky;
+    }
     .nav--bar {
         display: none;
     }
@@ -491,7 +499,7 @@ i.fa-facebook {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        position: relative;
+        /* position: relative; */
     }
     .burger {
         display: block;
@@ -510,6 +518,11 @@ i.fa-facebook {
 }
 
 @media screen and (max-width:545px) {
+    header {
+        position: sticky;
+        /* top: 0; */
+        /* z-index: 9999; */
+    }
     .images {
         width: 96%;
     }
@@ -539,6 +552,11 @@ i.fa-facebook {
 }
 
 @media screen and (max-width:470px) {
+    header {
+        position: sticky;
+        /* top: 0; */
+        /* z-index: 9999; */
+    }
     .home--text {
         width: 80%;
         align-content: flex-end;
@@ -552,6 +570,11 @@ i.fa-facebook {
 
 @media screen and (max-width:380px) {
     header {
+        position: sticky;
+        /* top: 0; */
+        /* z-index: 9999; */
+    }
+    header {
         width: 100%;
     }
     .home--text {
@@ -563,32 +586,5 @@ i.fa-facebook {
     }
     .home--image {
         width: 80%;
-    }
-    /* .home--text__h2 {}
-    .home--text__h3 {}
-    .home--text__h1 {}
-    .home--text__p {} */
-}
-
-@media screen and (max-width:380px) {
-    .home--text {
-        width: 80%;
-        align-content: flex-end;
-        margin-left: 40px;
-        /* flex-direction: column; */
-        /* grid-template-columns: 1fr; */
-    }
-    .home--image {
-        width: 80%;
-    }
-    /* .home--text__h2 {}
-    .home--text__h3 {}
-    .home--text__h1 {}
-    .home--text__p {} */
-    .main--bar {
-        width: 300px;
-    }
-    .footer-block {
-        width: 100%;
     }
 }
