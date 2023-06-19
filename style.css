@@ -23,10 +23,6 @@ a {
     --small-font: 1rem;
 }
 
-body {
-    /* Add top padding to the body to accommodate the fixed header */
-}
-
 header {
     position: sticky;
     top: 0;
@@ -549,6 +545,10 @@ i.fa-facebook {
 }
 
 @media screen and (max-width: 380px) {
+    /* .contact {
+        display: flex;
+        flex-wrap: wrap;
+    } */
     header {
         position: sticky;
         top: 0;
