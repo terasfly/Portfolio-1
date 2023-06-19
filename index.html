@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -63,7 +63,7 @@
         </div>
 
         <div class="image--container ">
-            <img class="home--image images " src="ET_046w.jpg" alt="tomas smiling">
+            <img class="home--image images " src="img/ET_046w.jpg" alt="tomas smiling">
         </div>
 
     </section>
@@ -116,6 +116,68 @@
 
 
     </section>
+    <section class="services">
+        <h1 class="subtitle">Services</h1>
+        <div class="services--blocks">
+            <div class="block">
+                <i class="fas fa-globe service--icon"></i>
+                <p class="services--text">Web Development</p>
+
+            </div>
+            <div class="block">
+                <i class="fas fa-paint-brush service--icon"></i>
+
+                <p class="services--text ">UI/UX Design</p>
+
+            </div>
+            <div class="block">
+                <i class="fab fa-android service--icon"></i>
+
+                <p class="services--text ">App Development</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 class="subtitle">Contact</h1>
+        <div class="form">
+
+            <form action="submit" method="post">
+                <label for="name">Name :</label><br>
+                <input type="text" id="name" placeholder="Your Name" required><br>
+
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" placeholder="Your Email" name="email" required><br>
+                <label for="message">Message : </label><br>
+                <textarea id="message" placeholder="Write Message Here:" name="message " rows="10" cols="30"></textarea>
+                <input class="button" type="button" value="send">
+
+            </form>
+        </div>
+    </section>
+    <section class="follow">
+        <h1 class="subtitle">Follow Me</h1>
+        <div class="follow--block">
+            <div class="follow__links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li> <a href="#"><i class="fab fa-facebook"></i>
+                    </i></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-block">
+
+            <p class="footer--text"> © GitHub| All Right Reserved.</p>
+        </div>
+    </footer>
+
 
 </body>
 
