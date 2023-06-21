@@ -6,24 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <header>
+<body class="light-theme">
+    <header id="header">
         <div class="logo">
-            <a href="#" class="logo">Git <span class="logo__text">Hub</span></a>
+            <a href="#" class="logo"><span class="git">Git</span><span class="logo__text">Hub</span></a>
         </div>
+
         <div class="nav--bar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><i class="fas fa-moon"></i></li>
+                <li><a href="#home" id="home">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="#skills" id="skillsButton">Skills</a></li>
+                <li><a href="#services" id="servicesButton">Services</a></li>
+                <li><a href="#contact" id="contactButton">Contact</a></li>
+                <li><i class="fas fa-moon" id="iconMoon"></i></li>
+                <i id="iconSun" class="fas fa-sun" style="display: none;"></i>
             </ul>
         </div>
         <div class="burger">
@@ -32,7 +34,7 @@
             <div></div>
         </div>
     </header>
-    <section class="section--home">
+    <section class="section--home" id="home">
         <div class="section--home__links">
             <ul>
                 <li> <a href="#"><i class="fab fa-github"></i></a></li>
@@ -63,11 +65,11 @@
         </div>
 
         <div class="image--container ">
-            <img class="home--image images " src="ET_046w.jpg" alt="tomas smiling">
+            <img class="home--image images " src="img/ET_046w.jpg" alt="tomas smiling">
         </div>
 
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <h1 class="subtitle">
             SKILLS
         </h1>
@@ -116,7 +118,7 @@
 
 
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <h1 class="subtitle">Services</h1>
         <div class="services--blocks">
             <div class="block">
@@ -138,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1 class="subtitle">Contact</h1>
         <div class="form">
 
@@ -178,7 +180,7 @@
         </div>
     </footer>
 
-
+    <script src="main.js"></script>
 </body>
 
 </html>
