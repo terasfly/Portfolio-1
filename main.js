@@ -1,6 +1,22 @@
 const iconMoon = document.getElementById('iconMoon')
 const iconSun = document.getElementById('iconSun')
 
+const navBar = document.getElementById('nav--bar__column')
+const burger = document.getElementById('burger')
+
+burger.addEventListener('click', () => {
+    if (navBar.style.display === 'none') {
+        navBar.style.display = 'block'
+    } else {
+        navBar.style.display = 'none'
+    }
+})
+
+
+
+
+
+
 // scrool down smothly
 //////////////////////////////////////////////////////
 let contactButton = document.getElementById('contactButton');
@@ -28,6 +44,9 @@ let homeButton = document.getElementById('homeButton');
 //     let homeSection = document.getElementById('home');
 //     homeSection.scrollIntoView({ behavior: 'smooth' });
 // });
+
+
+// sukuri buttons array ir viska sudedi paskui variable ir vel viska sujungi su loop
 const buttons = [
     { buttonId: 'contactButton', sectionId: 'contact' },
     { buttonId: 'servicesButton', sectionId: 'services' },
