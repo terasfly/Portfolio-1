@@ -752,4 +752,8 @@ i.fa-facebook {
     .footer-block {
         margin: 0 10px 0 10px;
     }
+    .form {
+        width: 250px;
+        /* flex-direction: column; */
+    }
 }
