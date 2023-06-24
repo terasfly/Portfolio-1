@@ -433,7 +433,7 @@ i.fab {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 250px;
     /* flex-direction: column; */
 }
 
@@ -752,8 +752,8 @@ i.fa-facebook {
     .footer-block {
         margin: 0 10px 0 10px;
     }
-    .form {
+/*     .form {
         width: 250px;
         /* flex-direction: column; */
-    }
+    } */
 }
