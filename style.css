@@ -795,19 +795,14 @@ i.fa-facebook {
     .follow {
         width: 100%;
     }
-    .follow ul {}
-    .contact {}
-    /* body {
-        margin: 0;
-        padding: 0;
-    } */
     .footer-block {
         margin: 0 10px 0 10px;
     }
-    /*     .form {
-        width: 250px;
-        /* flex-direction: column; */
-}
-
-*/
+    form {
+        width: 202px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
