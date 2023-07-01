@@ -114,10 +114,14 @@ section {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     /* margin: 0 1.3rem; */
     z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-around;
@@ -160,7 +164,6 @@ header {
 /* Section Home */
 
 .section--home {
-    margin: 0;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -536,6 +539,55 @@ i.fa-facebook {
     color: rgb(30, 4, 232);
 }
 
+.burger__down {
+    position: relative;
+    top: 28vh;
+    /* Adjust this value to change the distance from the top */
+    left: 32%;
+    transform: translate(-50%, -50%);
+    /* background: #ffff; */
+    /* width: 100%; */
+    /* max-width: 280px; */
+    /* Optional: Set a maximum width for the element */
+    /* background:transparent; */
+    display: none;
+}
+
+.burder--scroll__down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.burger--links__block {
+    min-width: 160px;
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.burger--links__block a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.burger--links__block a:hover {
+    background: #033a80;
+    color: #fff;
+}
+
 @media screen and (max-width: 800px) {
     header {
         position: sticky;
@@ -743,17 +795,10 @@ i.fa-facebook {
     .follow {
         width: 100%;
     }
-    .follow ul {}
-    .contact {}
-    /* body {
-        margin: 0;
-        padding: 0;
-    } */
     .footer-block {
         margin: 0 10px 0 10px;
     }
-/*     .form {
+    .form input {
         width: 250px;
-        /* flex-direction: column; */
-    } */
+    }
 }
