@@ -121,14 +121,14 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
     background-color: var(--bg-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 25px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     /* Add a background color to ensure visibility */
+    height: 75px;
 }
 
 .logo {
@@ -795,10 +795,19 @@ i.fa-facebook {
     .follow {
         width: 100%;
     }
+    .follow ul {}
+    .contact {}
+    /* body {
+        margin: 0;
+        padding: 0;
+    } */
     .footer-block {
         margin: 0 10px 0 10px;
     }
-    .form input {
+    /*     .form {
         width: 250px;
-    }
+        /* flex-direction: column; */
+}
+
+*/
 }
